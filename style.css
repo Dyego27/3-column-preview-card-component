@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Outfit" sans-serif;
+}
+.container{
+    display: flex;
+    width: 900px;
+    
+}
+.card{
+    color: #fff;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.card_2{
+    color: #fff;
+    background-color: hsl(184, 100%, 22%);
+}
+.card_3{
+    color: #fff;
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.card-container{
+    padding: 40px;
+}
+.card p{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.card_2 p{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+.card_3 p{
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+button{
+    padding: 15px;
+    border: none;
+    outline: none;
+    width: 120px;
+    background: white;
+    border-radius: 50px;
+}
+.btn{
+    color: hsl(31, 77%, 52%);
+
+}
+.btn_2{
+    color: hsl(184, 100%, 22%);
+}
+.btn_3{
+    color: hsl(179, 100%, 13%);
+}
+button:hover{
+    background: transparent;
+    color: #fff;
+    transition: 0.8s all;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+@media(max-width:760px){
+
+
+    .container{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .card{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 15px;
+    }
+    .card_3{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+
+    }
+}
